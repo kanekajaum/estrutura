@@ -1,0 +1,25 @@
+<h1>Gerenciador de conteúdos</h1>
+<br>
+<a href="http://localhost/desenvolvimento/estrutura/?pagina=admin&metodo=create">Criar publicação</a><br><br>
+<hr>
+<br>
+<table border="1">
+	<tr>
+		<th>ID</th>
+		<th>TÍTULO</th>
+		<th>ALTERAÇÃO</th>
+		<th>DELEÇÃO</th>
+	</tr>
+
+	{% for postagem in postagens %}
+
+	<tr>
+		<th>{{postagem.id}}</th>
+		<th>{{postagem.titulo}}</th>
+		<th><a href="">Alterar</a></th>
+		<th><a href="?pagina=admin&metodo=delete{{postagem.id}}">Deletar</a></th>
+	</tr>
+
+	{% endfor %}
+
+</table>

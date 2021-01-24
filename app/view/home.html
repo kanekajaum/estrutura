@@ -3,11 +3,13 @@
 	
 	{% for postagem in postagens %}
 	<article>
-		<header>
-			<h2><a href="">{{postagem.titulo}}</a></h2>
-		</header>
+		<fieldset>
+			<header>
+				<h2><a href="http://localhost/desenvolvimento/estrutura/?pagina=post&id={{postagem.id}}">{{postagem.titulo}}</a></h2>
+			</header>
 
-		<p>{{postagem.conteudo}}</p>
+			<p>{{postagem.conteudo}}</p>
+		</fieldset>
 	</article>
 	{% endfor %}
 

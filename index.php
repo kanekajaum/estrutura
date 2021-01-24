@@ -1,11 +1,18 @@
 <?php  
-
+require_once 'vendor/autoload.php';
 require_once 'app/core/core.php';
+
 require_once 'app/controller/homeController.php';
 require_once 'app/controller/erroController.php';
+require_once 'app/controller/postController.php';
+require_once 'app/controller/sobreController.php';
+require_once 'app/controller/adminController.php';
+
 require_once 'app/model/postagem.php';
+require_once 'app/model/comentario.php';
+
 require_once 'lib/database/connection.php';
-require_once 'vendor/autoload.php';
+
 
 
 $template = file_get_contents('app/template/estrutura.html');
